@@ -1,1 +1,29 @@
-// Specific CSS for your home-page
+.home-banner {
+  margin-top: 20px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.home-banner .btn-start {
+  position: absolute;
+  bottom: 170px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 60px;
+  border: 2.5px solid $red;
+  font-size: 18px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  &:hover {
+    border: 2.5px solid black;
+  }
+}

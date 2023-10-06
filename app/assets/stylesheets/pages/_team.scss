@@ -1,0 +1,40 @@
+
+.team-member {
+  margin: 20px 10px;
+  position: relative;
+  h3 {
+    margin: 5px 0 0 0;
+  }
+  &:hover {
+    i {
+      transition: all 0.2s ease-in-out;
+      opacity: 1;
+    }
+  }
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.team-member i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: $red;
+  font-size: 30px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.grid-team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin: 20px 0;
+}
+
+.two {
+  grid-template-columns: repeat(2, 1fr);
+}

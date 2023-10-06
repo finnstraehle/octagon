@@ -1,2 +1,33 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="home-banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url("banner.jpg") %>)">
+  <h1>Octagon – Champions of Change</h1>
+  <%= link_to "Get Involved", root_path, class: "btn-outline-red btn-start" %>
+</div>
+
+
+<div class="container-m text-center">
+  <h3>Where Learning to Fight Means Learning to Make a Difference</h3>
+  <p>Willkommen bei Octagon Global, dem offiziellen Verein an der Universität St. Gallen (HSG). Der primäre Zweck des Vereins "Octagon" besteht darin, einen transformativen sozialen Impact durch die Verschmelzung von interkulturellem Austausch und Kampfsport zu erzielen.</p>
+</div>
+<div class="container-l">
+  <div class="home-grid">
+    <div class="home-card">
+      <h2>Events</h2>
+      <p>We organize Events</p>
+    </div>
+    <div class="home-card">
+      <h2>Volunteering</h2>
+      <p>We organize Events</p>
+    </div>
+    <div class="home-card">
+      <h2>Community</h2>
+      <p>We organize Events</p>
+    </div>
+  </div>
+  <h2>Get Involved</h2>
+  <div>
+    <%= link_to "Volunteer", root_path, class: "btn-outline" %>
+    <%= link_to "Become a Member", root_path, class: "btn-outline" %>
+    <%= link_to "Join the Team", root_path, class: "btn-outline" %>
+    <%= link_to "Other", root_path, class: "btn-outline" %>
+  </div>
+</div>
