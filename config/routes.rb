@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/about', to: 'pages#about', as: :about
   get '/team', to: 'pages#team', as: :team
   get '/faq', to: 'pages#faq', as: :faq
+  get '/dashboard', to: 'pages#dashboard', as: :dashboard
 end
