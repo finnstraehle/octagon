@@ -7,6 +7,7 @@ class PagesController < ApplicationController
   def about
   end
 
-  def contact
+  def team
+    @team_members = User.where(role: 'team' || 'admin')
   end
 end

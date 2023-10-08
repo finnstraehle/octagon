@@ -1,8 +1,10 @@
 <div class="team-member">
   <%= image_tag "finn.jpg" %>
-  <i class="fa-brands fa-linkedin-in"></i>
+  <%= link_to "#{team_member.linkedin}", target: :_blank do %>
+    <i class="fa-brands fa-linkedin-in"></i>
+  <% end %>
   <div class="team-member-text">
-    <h3>Finn Strähle</h3>
-    <p>President</p>
+    <h3><%= "#{team_member.first_name} #{team_member.last_name}" %></h3>
+    <p><%= team_member.position %></p>
   </div>
 </div>

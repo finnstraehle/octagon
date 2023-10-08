@@ -1,3 +1,3 @@
 class Event < ApplicationRecord
-  belongs_to :user
+  has_many :event_attendances, dependent: :destroy
 end
