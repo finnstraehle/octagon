@@ -1,5 +1,4 @@
 .home-banner {
-  margin-top: 20px;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -25,5 +24,64 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   &:hover {
     border: 2.5px solid black;
+  }
+}
+
+.home-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  grid-gap: 40px;
+}
+
+.home-grid .card-home {
+  width: 100%;
+  min-height: fit-content;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 30px;
+}
+
+.card-home img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.red-line {
+  width: 100px;
+  height: 2px;
+  background-color: $red;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.grid-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+// Responsive
+@media (max-width: 1400px) {
+  .card-home {
+    height: 500px;
+  }
+  .grid-buttons {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .card-home {
+    height: 500px;
+  }
+  .grid-buttons {
+    grid-template-columns: 1fr;
+  }
+  .home-grid {
+    grid-template-columns: 1fr;
   }
 }

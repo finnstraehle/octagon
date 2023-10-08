@@ -4,27 +4,37 @@
 </div>
 
 
-<div class="container-m text-center">
-  <h3>Where Learning to Fight Means Learning to Make a Difference</h3>
-  <p>Willkommen bei Octagon Global, dem offiziellen Verein an der Universität St. Gallen (HSG). Der primäre Zweck des Vereins "Octagon" besteht darin, einen transformativen sozialen Impact durch die Verschmelzung von interkulturellem Austausch und Kampfsport zu erzielen.</p>
-</div>
 <div class="container-l">
+  <div class="container-m text-center">
+    <h3>Where Learning to Fight Means Learning to Make a Difference</h3>
+    <p>Willkommen bei Octagon Global, dem offiziellen Verein an der Universität St. Gallen (HSG). Der primäre Zweck des Vereins "Octagon" besteht darin, einen transformativen sozialen Impact durch die Verschmelzung von interkulturellem Austausch und Kampfsport zu erzielen.</p>
+  </div>
+  <div class="red-line"></div>
   <div class="home-grid">
-    <div class="home-card">
-      <h2>Events</h2>
-      <p>We organize Events</p>
+    <div class="card-home">
+      <%= image_tag "octagon.png" %>
+      <div class="card-home-content">
+        <h2>Community</h2>
+        <p>Student-led organization with 80+ backers to mix cultural exchange with martial arts, aiming for social impact in the world</p>
+      </div>
     </div>
-    <div class="home-card">
-      <h2>Volunteering</h2>
-      <p>We organize Events</p>
+    <div class="card-home">
+      <%= image_tag "octagon.png" %>
+      <div class="card-home-content">
+        <h2>Fighting</h2>
+        <p>Currently setting up programs that focus on pushing students out of the comfort zone, envisioning holistic personal growth</p>
+      </div>
     </div>
-    <div class="home-card">
-      <h2>Community</h2>
-      <p>We organize Events</p>
+    <div class="card-home">
+      <%= image_tag "octagon.png" %>
+      <div class="card-home-content">
+        <h2>Impact</h2>
+        <p>Encouraging resilience and social responsibility, setting new standards for leadership skills and community influence</p>
+      </div>
     </div>
   </div>
-  <h2>Get Involved</h2>
-  <div>
+  <div class="text-center m-5"><h2>Get Involved</h2></div>
+  <div class="grid-buttons">
     <%= link_to "Volunteer", root_path, class: "btn-outline" %>
     <%= link_to "Become a Member", root_path, class: "btn-outline" %>
     <%= link_to "Join the Team", root_path, class: "btn-outline" %>
