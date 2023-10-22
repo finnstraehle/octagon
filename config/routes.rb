@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/team', to: 'pages#team', as: :team
   get '/faq', to: 'pages#faq', as: :faq
   get '/dashboard', to: 'pages#dashboard', as: :dashboard
+  get '/join_team', to: 'pages#join_team', as: :join_team
 end

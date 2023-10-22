@@ -1,6 +1,22 @@
-<div class="container-m">
+<div class="container-l">
   <div>
-    <h1>Dashboard</h1>
-    <p>Hi <%= current_user.email %></p>
+    <div style="display: flex; justify-content: space-between; align-items: end">
+      <h1>Dashboard</h1>
+      <p>Hi <%= current_user.first_name %> !</p>
+    </div>
+    <div class="dashboard-grid-4">
+      <%= link_to edit_user_registration_path, class: "dashboard-card dashboard-button" do %>
+      <h4>Manage Events</h4>
+      <% end %>
+      <%= link_to edit_user_registration_path, class: "dashboard-card dashboard-button" do %>
+      <h4>Manage Projects</h4>
+      <% end %>
+      <%= link_to edit_user_registration_path, class: "dashboard-card dashboard-button" do %>
+      <h4>Manage Team</h4>
+      <% end %>
+      <%= link_to edit_user_registration_path, class: "dashboard-card dashboard-button" do %>
+      <h4>Manage Members</h4>
+      <% end %>
+    </div>
   </div>
 </div>
